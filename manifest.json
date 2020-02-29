@@ -1,0 +1,13 @@
+{
+  "name": "FFS Utility",
+  "version": "1.0",
+  "description": "",
+  "icons": { "16" : "images/16.png",
+             "48" : "images/48.png",
+             "128": "images/128.png" },
+  "content_scripts": [{
+			 "matches" : ["http://apps.facebook.com/friendsforsale/*"],
+			 "js"	   : ["js/jquery-1.3.2.min.js", "js/content.js"],
+			 "run_at"  : "document_end" }],
+  "permissions": ["tabs"]
+}
